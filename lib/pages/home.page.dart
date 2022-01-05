@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pomodoro/components/bottom.component.dart';
 import 'package:pomodoro/components/control.components.dart';
+import 'package:pomodoro/components/timer.component.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -17,21 +18,7 @@ class HomePage extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
-                      'Hora de Trabalhar',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 25,
-                      ),
-                    ),
-                    SizedBox(height: 10),
-                    Text(
-                      '00:30',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 80,
-                      ),
-                    ),
+                    TimerComponent(),
                     SizedBox(height: 10),
                     ControlComponents(),
                   ],
