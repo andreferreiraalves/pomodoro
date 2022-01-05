@@ -10,7 +10,7 @@ class TimerComponent extends StatelessWidget {
           'Hora de Trabalhar',
           style: TextStyle(
             color: Colors.white,
-            fontSize: 25,
+            fontSize: 30,
           ),
         ),
         SizedBox(height: 10),
@@ -18,7 +18,7 @@ class TimerComponent extends StatelessWidget {
           '00:30',
           style: TextStyle(
             color: Colors.white,
-            fontSize: 80,
+            fontSize: 100,
           ),
         ),
         SizedBox(height: 10),

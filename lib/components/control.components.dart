@@ -1,25 +1,24 @@
 import 'package:flutter/material.dart';
+import 'package:pomodoro/components/button_control.component.dart';
 
 class ControlComponents extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        ElevatedButton(
-          style: ElevatedButton.styleFrom(
-            padding: EdgeInsets.symmetric(
-              horizontal: 30,
-              vertical: 20,
-            ),
-            primary: Colors.black,
-          ),
-          onPressed: () {},
-          child: Row(
-            children: [
-              Icon(Icons.stop),
-              Text('Parar'),
-            ],
-          ),
+        ButtonControlComponent(
+          icon: Icons.play_arrow,
+          title: 'Iniciar',
+        ),
+        //ButtonControlComponent(
+        //  icon: Icons.stop,
+        //  title: 'Parar',
+        //),
+        SizedBox(width: 30),
+        ButtonControlComponent(
+          icon: Icons.refresh,
+          title: 'Reiniciar',
         ),
       ],
     );
